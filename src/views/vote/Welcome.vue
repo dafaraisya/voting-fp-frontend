@@ -5,11 +5,11 @@
       <b-container class="container h-100 text-white">
         <b-row class="row h-100 justify-content-center align-items-center">
           <b-col lg="12">
-            <h1>PEMIRA FT UNS 2020</h1>
+            <h1>PEMIRA FP UNS 2020</h1>
             <div class="inner">
               <span>
-                #ftmemilih<br />
-                #suaraft<br />
+                #fpmemilih<br />
+                #suarafp<br />
                 #suksespemira2020
               </span>
             </div>
@@ -58,7 +58,7 @@ export default {
     Footer,
   },
   created() {
-    document.title = "PEMIRA FT UNS 2020";
+    document.title = "PEMIRA FP UNS 2020";
   },
 };
 </script>
@@ -96,7 +96,7 @@ b-button {
   font-weight: bold;
   overflow: hidden;
   display: inline-block;
-  left: calc(50% - 290px);
+  lefp: calc(50% - 290px);
 }
 .inner span {
   animation: animate 6s ease infinite;
@@ -190,7 +190,7 @@ b-button {
   }
   .inner {
     font-size: 30px;
-    left: calc(50% - 155px);
+    lefp: calc(50% - 155px);
   }
   #home {
     padding-top: 160px;
