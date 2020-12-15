@@ -99,13 +99,13 @@ export default {
   mounted() {
     axios
       .get(
-        "http://localhost:3000/api/v1/participant/" + this.$route.params.id
+        "http://52.152.228.107:3000/api/v1/participant/" + this.$route.params.id
       )
       .then((res) => (this.participant = res.data.data))
       .catch((err) => console.log(err));
 
     axios
-      .get("http://localhost:3000/api/v1/candidate/all")
+      .get("http://52.152.228.107:3000/api/v1/candidate/all")
       .then((res) => (this.candidates = res.data.data))
       .catch((error) => console.log(error));
   },

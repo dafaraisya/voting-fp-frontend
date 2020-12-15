@@ -79,7 +79,7 @@ export default {
             id_candidate_legislatif2: id_candidate_legislatif2,
           };
           axios
-            .put("http://localhost:3000/api/v1/participant/vote", data)
+            .put("http://52.152.228.107:3000/api/v1/participant/vote", data)
             .then(() => {
               Swal.fire({
                 icon: "success",
@@ -104,13 +104,13 @@ export default {
   mounted() {
     axios
       .get(
-        "http://localhost:3000/api/v1/participant/" + this.$route.params.id
+        "http://52.152.228.107:3000/api/v1/participant/" + this.$route.params.id
       )
       .then((res) => (this.participant = res.data.data))
       .catch((err) => console.log(err));
 
     axios
-      .get("http://localhost:3000/api/v1/candidate/all")
+      .get("http://52.152.228.107:3000/api/v1/candidate/all")
       .then((res) => (this.candidates = res.data.data))
       .catch((error) => console.log(error));
   },
