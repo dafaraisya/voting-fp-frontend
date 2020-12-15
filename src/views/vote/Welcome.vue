@@ -96,7 +96,7 @@ b-button {
   font-weight: bold;
   overflow: hidden;
   display: inline-block;
-  lefp: calc(50% - 290px);
+  left: calc(50% - 290px);
 }
 .inner span {
   animation: animate 6s ease infinite;
