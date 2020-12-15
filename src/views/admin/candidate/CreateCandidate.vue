@@ -9,7 +9,8 @@
                             <b-form-select class="form-control" name="type" id="type" v-model="dataCandidate.type">
                                 <option value="">Pilih Tipe Kandidat</option>
                                 <option value="bem">Ketua BEM</option>
-                                <option value="legislatif">Ketua Legislatif</option>
+                                <option value="legislatif">Legislatif Partai Politik</option>
+                                <option value="legislatif2">Legislatif Program Studi</option>
                             </b-form-select>
                         </b-form-group>
                         <b-form-group label="Nama lengkap :" label-for="namaLengkap">

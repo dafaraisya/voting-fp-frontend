@@ -2,10 +2,10 @@
   <div class="voting">
     <div class="container text-left">
       <img src="" alt="" />
-      <h1 class="text-white tittle">PEMIRA FMIPA UNS 2020</h1>
+      <h1 class="text-white tittle">PEMIRA FT UNS 2020</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
-        calon Ketua Legislatif dibawah ini
+        Calon Legislatif Partai Politik dibawah ini
       </h4>
       <b-row>
         <b-col
@@ -60,7 +60,7 @@ export default {
     return {
       participant: [],
       candidates: [],
-      id_candidate_bem : ''
+      id_candidate_bem: "",
     };
   },
   methods: {
@@ -71,30 +71,24 @@ export default {
         buttons: true,
       }).then((result) => {
         if (result.isConfirmed) {
-          let data = {
-            id_participant: this.participant._id,
-            id_candidate_bem: this.id_candidate_bem,
-            id_candidate_legislatif: id_candidate_legislatif,
-          };
-          axios
-            .put(
-              "http://localhost:3000/api/v1/participant/vote",
-              data
-            )
-            .then(() => {
-              Swal.fire({
-                icon: "success",
-                title: "Pilihan anda berhasil dikirim",
-                showConfirmButton: true,
-              }).then(() => {
-                this.$store.commit("setAuthentication", false);
-                this.$router.push({
-                  name: "Announcement",
-                  query: { success: true },
-                });
+          if (result.isConfirmed) {
+            this.$router
+              .push({
+                name: "VotingLegislatif2",
+                params: { id: this.participant._id },
+                query: {
+                  id_candidate_bem: this.id_candidate_bem,
+                  id_candidate_legislatif: id_candidate_legislatif,
+                },
+              })
+              .then(() => {
+                Swal.fire({
+                  icon: "success",
+                  title: "Pilihan anda berhasil dikirim",
+                  showConfirmButton: true,
+                }).catch((err) => console.log(err));
               });
-            })
-            .catch((err) => console.log(err));
+          }
         }
       });
     },
@@ -105,8 +99,7 @@ export default {
   mounted() {
     axios
       .get(
-        "http://localhost:3000/api/v1/participant/" +
-          this.$route.params.id
+        "http://localhost:3000/api/v1/participant/" + this.$route.params.id
       )
       .then((res) => (this.participant = res.data.data))
       .catch((err) => console.log(err));
@@ -117,17 +110,17 @@ export default {
       .catch((error) => console.log(error));
   },
   created() {
-      if(this.$route.query.id_candidate_bem) {
-        this.id_candidate_bem = this.$route.query.id_candidate_bem;
-      }
+    if (this.$route.query.id_candidate_bem) {
+      this.id_candidate_bem = this.$route.query.id_candidate_bem;
+    }
   },
   computed: {
     LegislatifCandidates: function() {
-      return this.candidates.filter(function (candidate) {
-        return candidate.type == 'legislatif';
-      })
-    }
-  }
+      return this.candidates.filter(function(candidate) {
+        return candidate.type == "legislatif";
+      });
+    },
+  },
 };
 </script>
 <style scoped>
@@ -143,6 +136,6 @@ h1 {
       rgb(0, 0, 0, 0.7) 80%
     ),
     url("https://drive.google.com/uc?export=download&id=1COIP91BUDc2z0l_Bl2OFYQIFNnGXuS83");
-    background-size: cover;
+  background-size: cover;
 }
 </style>

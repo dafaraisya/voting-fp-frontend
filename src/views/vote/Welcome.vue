@@ -5,11 +5,11 @@
       <b-container class="container h-100 text-white">
         <b-row class="row h-100 justify-content-center align-items-center">
           <b-col lg="12">
-            <h1>PEMIRA FMIPA UNS 2020</h1>
+            <h1>PEMIRA FT UNS 2020</h1>
             <div class="inner">
               <span>
-                #fmipamemilih<br />
-                #suaramipa<br />
+                #ftmemilih<br />
+                #suaraft<br />
                 #suksespemira2020
               </span>
             </div>
@@ -58,7 +58,7 @@ export default {
     Footer,
   },
   created() {
-    document.title = "PEMIRA FMIPA UNS 2020";
+    document.title = "PEMIRA FT UNS 2020";
   },
 };
 </script>
@@ -140,7 +140,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=1A08sfz0Ah2Vy4RgWt2L-_e2DS35Z30XD");
+    url("https://drive.google.com/uc?export=download&id=1Y50lIX36x5bvMvu-PkNeviM7FdgfsNgJ");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=1jSLPu9SkDrG4z4Y5liTO3GpKH_mb2pmR");
+    url("https://drive.google.com/uc?export=download&id=1nz3ljww7_FHWtJOy4cG8-miyMnSWjRFF");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
