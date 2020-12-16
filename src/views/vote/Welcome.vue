@@ -140,7 +140,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("");
+    url("https://drive.google.com/uc?export=download&id=1rZC840gsFNBW2DjJwyhcbtX90JKcFfGR");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("");
+    url("https://drive.google.com/uc?export=download&id=15MrRW5jqD25Ykq2pDTbR5hl78GMMlS1B");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
