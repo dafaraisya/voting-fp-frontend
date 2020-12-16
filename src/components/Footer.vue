@@ -8,7 +8,7 @@
             <div class="footer-logo">
               <img
                 class="rounded-circle"
-                src="@/assets/logo kpr.png"
+                src="@/assets/logo kpr2.png"
                 alt=""
               />
             </div>
