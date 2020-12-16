@@ -3,7 +3,7 @@
     <div class="preloader-content">
       <b-row>
         <b-col lg="6">
-          <img class="logo" src="@/assets/logo kpr2.png" />
+          <img class="logo" src="@/assets/logo kpr3.png" />
         </b-col>
         <b-col lg="6">
           <b-container class="name">
