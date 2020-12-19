@@ -190,7 +190,7 @@ b-button {
   }
   .inner {
     font-size: 30px;
-    lefp: calc(50% - 155px);
+    left: calc(50% - 155px);
   }
   #home {
     padding-top: 160px;
